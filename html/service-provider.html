@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- style -->
+  <link rel="stylesheet" href="Style/style1-res.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- script new -->
+  <script  src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script  src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+</head>
+<body>
+
+    <div class="logo">
+      <img  id="lo1" src="img/logo.png" alt="">
+      <h2>ECSS/
+        Service Provider</h2>
+      <div class="dropdown">
+        <img  src="img/logoimg.png" onclick="myFunction()" class="dropbtn" id="hello" >
+        <div id="myDropdown" class="dropdown-content">
+          <a  class="lgo" href="">Update Profile</a>
+          <a  class="lgo" href=" ">Change Password</a>
+          <a  class="lgo" href="envirologin.html">Log Out</a>
+        </div>
+    </div> 
+    </div>
+    <br>
+    <section id="interface">
+      <div class="navigation">
+      </div>
+    </section>
+    <div id="empty">
+      <form action="" id="date-field" >
+        <div class="display-date">
+         
+          <label id="l1">From  </label>
+          <input type="date" name="starting" id="fdate" class="inp1" >
+          <label id="l2">To  </label>
+          <input type="date" name="ending" id="tdate" class="inp1">  
+          <button type="button" name="submit" id="submit" onclick="display_table()">Search</button> <br> <br>
+          <button id="downloadexcel"> Export to Excel </button> <br> <br>
+        
+        </div>
+      </form>
+    </div>
+    <br>
+</form>
+
+<script src="Scripts/table2excel.js"></script>
+
+<div class="board">
+
+<div id="text">
+  <table id="example-table">
+  
+   <tbody id="TableBody">
+     
+   </tbody>
+   </table>
+ </div>
+    
+  
+  <script  src="Scripts/database-child.js"></script>
+</div>
+<script>
+              
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  document.getElementById('downloadexcel').addEventListener('click', function(){
+        var table2excel = new Table2Excel();
+    table2excel.export(document.querySelectorAll("#example-table"));
+      }) 
+  </script>
+  <section id="menu">
+    <div class="items">
+      <img class="don1" src="img/tree.png" alt="">
+  </div>
+  </section>
+</body>
+</html>

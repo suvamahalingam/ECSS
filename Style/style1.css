@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@300&display=swap');
+
+*
+{
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #D3ECA7;
+  }
+  .logo{
+    display : flex;
+    flex-direction: row;
+  }
+  .logo .dropbtn
+  {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
+  #lo1{
+      width: 79px;
+      margin-right: 15px;
+  }
+  h2{
+    margin-left:10px;
+    color: black;
+    width: 40%;
+    margin-top: 26px;
+  }
+  .dropbtn {
+    cursor: pointer;
+  }
+  .dropdown {
+    position:relative;
+    display: inline-block;
+    width: 90%;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 80%;
+    margin-top: 55px;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  /* #addnew{
+    display: none;
+  }
+  .add-card{
+    justify-content: center;
+    box-shadow: 0 5px 10px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 400px;
+  } */
+  .add-card{
+    justify-content: center;
+    box-shadow: 0 5px 10px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 300px;
+    margin-left: 500px;
+  }
+ .add-card input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .add-card select{
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+  }
+  button#downloadexcel {
+    width: 150px;
+    padding: 5px 0px 25px;
+    margin-left: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 120px;
+    border: 2px solid green;
+    font-size: medium;
+}
+
+
+table#example-table {
+  margin-top: -60px;
+  margin-left: -70px;
+}
+  input#button{
+  
+    font-size: 20px; 
+    margin-left: 150px;
+    background-color: white;
+    width: 40%;
+    cursor: pointer;
+  }
+  h3{
+    font-size: 17.5px;
+  }
+  .bard-service{
+    margin-left: 600px;
+    margin-top: 70px;
+  }
+  .add_data button{
+    border-radius: 10px;
+    padding: 10px 20px 35px;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 20px;
+  }
+  /* .add-card button{
+    border-radius: 10px;
+    padding: 10px 20px 35px;
+    margin-left: 35%;
+    width: 30%;
+    font-size: 20px;
+  
+    background-color: white;
+  } */
+  section#dm_month{
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+  } 
+  #interface
+{
+    margin-left: 290px;
+    margin-top: -50px;
+    position: relative;
+}
+#interface .navigation
+{
+    border-bottom: 3px solid green; 
+    margin-top: 30px;
+}
+
+  label{
+    font-size: 18px;
+    /* font-family: 'Kanit', sans-serif; */
+  }
+  #l1 {
+    padding-left: 5px;
+  }
+  #l2{
+    padding-left:20px;
+  }
+  .inp1{
+    width:130px;
+    margin-left: 10px;
+    height:23px;
+    border-radius: 7px;
+    margin-top: 50px; 
+  }
+.lgo
+{
+    background-color: white;
+    border: 1px solid green;
+    margin:none;
+    outline: none;
+    font-size:small;
+    font-weight: 1000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.display-date{
+  justify-content: center;
+  justify-items: center;
+  margin-left: 20%;
+}
+a{
+  
+  color: black;
+  font-weight: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  /* margin-left: 30px;
+  margin-top: 50%;
+  margin-bottom: 300%; */
+  
+}
+.relation{
+  margin-top: 150px;
+  margin-left: 30px;
+}
+a:hover{
+  color: blue;
+}
+.addtable{
+  margin-left: 500px;
+}
+  button{
+    width:85px;
+    border-radius: 15px;
+    margin-left:40px;
+    height:24px;
+    background-color: white;
+    /* border:2px solid rgb(168, 250, 168) ; */
+    color: black;
+    cursor: pointer;
+    
+  }
+  table{
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+  }
+  table thead{
+    background-color: #F6F6F6;
+    height:50px;
+  }
+  table thead td{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  table tr{
+    border-bottom:1px solid #E5DCC3;
+    border-width: 80%;
+  }
+  table tbody td{
+    padding-left: 15px;
+    padding-right:5px;
+  }
+  table tbody tr{
+    height:40px;
+  }
+  .board{
+    margin-left: 20%;
+  }
+  .bard{
+  
+      margin-left: 36%;
+      margin-top: 100px;
+    }
+  
+   
+#menu
+{
+  border-right: 3px solid green;
+  width: 300px;
+  height:702px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+  #menu .items .don1
+  {
+      height: 442px;
+      width: 297px;
+      margin-top: 1px;
+  }
+  #menu .items .don2
+  {
+      height: 442px;
+      width: 297px;
+      margin-top: 50px;
+  }
+  #menu .items .don3
+  {
+      height: 442px;
+      width: 297px;
+      margin-top: 100px;
+  }
+.la1{
+  margin-left:300px;
+}
+.upload{
+  display: flex;
+  flex-direction: row;
+}
+.inp{
+  margin-left: 10px;
+  width:250px;
+  height:50px;
+}
+input[type="file"] {
+  display: none;
+}
+.inp {
+  display: inline-block;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+.fa-picture-o{
+  height: 20px;
+  width:20px;
+}
+.filename{
+  font-size: 14px;
+  padding: 5px;
+}

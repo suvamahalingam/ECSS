@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>addnew</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="Style/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script> 
+</head>
+
+<body>
+  <div class="logo">
+    <img  id="lo1" src="img/logo.png" alt="">
+    <h3>ECSS / Donation Form</h3>
+    <div class="dropdown">
+
+      <img  src="img/logoimg.png" onclick="myFunction()" class="dropbtn" >
+      <input type="file" id="file">
+      <div id="myDropdown" class="dropdown-content">
+        
+       
+        <a  class="lgo" href="" >Update Profile</a>
+        <a  class="lgo" href="" >Change password</a>
+        <a  class="lgo" href="envirologin.html">Log Out</a>
+      </div>
+  </div> 
+  </div>
+
+  <br>
+  <section id ="interface">
+  <div class="navigation">
+  <div class="profile">
+    
+    </div>  
+ </div> 
+</div>
+</section>
+         
+
+          <br><br> <div class="addnew" id="dsave-msg" >
+            <form action="" method="post" class="add-card" id="addnew">
+              
+                <center><h2> Donation Form</h2> </center>
+               
+
+               <label for="fname">Date</label> <br>
+              <input type="date" id="date" name="date" >
+              <br> 
+              <label for="relation">Relationship</label> <br>
+                  <input type="text" id="dm_relation" name="relation" placeholder="Your Relationship to donor..">
+    
+                  <br> 
+                  <label for="event">Event</label> <br>
+                  <input type="text" id="dm_mevent" name="mevent" placeholder="Event like Birthday..">
+    
+                  <br> <br>
+                  <div class="add_data">
+                    <input type="button" onclick="Add_donation()" id="button" value="Next"> 
+                
+                  </div>
+               
+                  <!-- <button onclick="Add_datafirebase()" type="submit">ADD</button>  -->
+
+                  <!-- <div class="add_data">
+                    <input type="button" onclick="Add_datafirebase()" id="button" value="Add"> 
+                
+                  </div> -->
+                  
+              
+              
+                
+            </form> <br> <br>
+           
+          </div>
+         <div class="addtable">
+          <div id="text">
+            <table>
+           
+             <tbody id="TableBody">
+               
+             </tbody>
+             </table>
+           </div>
+          
+           
+          </div> 
+    
+    <script src="Scripts/add.js"></script> 
+    <script>        
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+   
+    </script>
+     <section id="menu">
+      <div class="items">
+        <div class="relation">
+          <a href="donor1.html" > Back</a>
+        </div>
+        <img class="don1" src="img/tree.png" alt="">
+    </div>
+    </section>
+</body>
+</html>
